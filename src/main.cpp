@@ -9,5 +9,7 @@ int main()
     while (gl::window_is_open())
     {
         // Rendu à chaque frame
+        glClearColor(0.f, 0.f, 1.f, 1.f); // Choisis la couleur à utiliser. Les paramètres sont R, G, B, A avec des valeurs qui vont de 0 à 1
+        glClear(GL_COLOR_BUFFER_BIT);
     }
 }

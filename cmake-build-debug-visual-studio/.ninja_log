@@ -1,0 +1,50 @@
+# ninja log v5
+19	127	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
+217	1090	7364278710845853	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	7713e148ece3d3d5
+201	1119	7364278710935856	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	3036588940cbe089
+168	1139	7364278711250863	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj	7c05f0c6effaeaf6
+152	1160	7364278711250863	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj	b6d4c6051d1ac174
+236	1181	7364278711255870	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	8688d677fd534fe0
+184	1202	7364278711320857	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj	aa08005ba7910234
+116	1423	7364278714165860	opengl-framework/CMakeFiles/glad.dir/lib/glad/src/gl.c.obj	696a9425eaffa0a0
+1425	1662	7364278716220864	opengl-framework/glad.lib	701732b8ff213310
+1121	1971	7364278719680863	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	9c2f1d507b48c7a1
+1094	1997	7364278719930833	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj	d33934881477e86e
+1141	2016	7364278719965837	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	8841c7141cc47c46
+1161	2034	7364278720035833	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	7cfcaadd6ce05ebb
+1183	2052	7364278720040864	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	1c9884743fae5a1b
+1203	2153	7364278721475861	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	93387e06c56999ea
+1662	2588	7364278725795853	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	a40747457aabe07a
+20	2614	7364278726055838	opengl-framework/CMakeFiles/opengl_framework.dir/src/handle_error.cpp.obj	d2f51f46077a3dcc
+1998	2845	7364278728395856	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	68a7a6e9a9552ba0
+1972	2854	7364278728520858	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	cc088d8c31b403a7
+2017	2863	7364278728580851	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	3255c638eaf1721c
+2054	2952	7364278729495871	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	86917ac78dcf69c
+2035	2953	7364278729490878	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	305c2f534823b81
+2154	3055	7364278730525868	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	dd14ec20999f2596
+3	3114	7364278731065883	opengl-framework/CMakeFiles/opengl_framework.dir/src/Camera.cpp.obj	5c23192dc8087650
+2590	3316	7364278733150868	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	e9c416ed43c1d1fa
+2616	3318	7364278733155885	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	1336092f895e09c3
+3319	3527	7364278734950869	opengl-framework/lib/glfw/src/glfw3.lib	8ca49a3ee733a406
+135	4208	7364278742055826	opengl-framework/lib/exe_path/CMakeFiles/exe_path.dir/src/exe_path.cpp.obj	1c740a40bc3a4a0d
+4209	4372	7364278743430923	opengl-framework/lib/exe_path/exe_path.lib	6448ee2551963d88
+96	5303	7364278752965925	opengl-framework/CMakeFiles/opengl_framework.dir/src/make_absolute_path.cpp.obj	49242c0184dc1b6f
+38	6105	7364278761000921	opengl-framework/CMakeFiles/opengl_framework.dir/src/Mesh.cpp.obj	fa8c6a0e25c13e1
+56	6612	7364278766065925	opengl-framework/CMakeFiles/opengl_framework.dir/src/Shader.cpp.obj	8060161e07f8f6eb
+76	6625	7364278766170893	opengl-framework/CMakeFiles/opengl_framework.dir/src/opengl-framework.cpp.obj	7f2be2932aec9122
+6626	6815	7364278767810920	opengl-framework/opengl_framework.lib	d3e048f6706d3b31
+6816	7203	7364278770725837	timestamp_1148a94a1bfa61305c7fa1ab20207b42	1ee782f4d094bc49
+6816	7203	7364278770725837	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_1148a94a1bfa61305c7fa1ab20207b42	1ee782f4d094bc49
+7206	11314	7364278813120838	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
+11315	12440	7364278823505824	TPs-Rendering.exe	563147632be54084
+13	98	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
+13	75	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
+5	2810	7364283329161114	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
+2811	3270	7364283332696032	TPs-Rendering.exe	563147632be54084
+16	121	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
+8	4206	7364283634606088	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
+4207	4958	7364283640676108	TPs-Rendering.exe	563147632be54084
+13	119	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
+6	3517	7364284124285984	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
+3518	3873	7364284126980985	TPs-Rendering.exe	563147632be54084
+8	66	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
