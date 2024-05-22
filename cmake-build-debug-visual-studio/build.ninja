@@ -47,11 +47,11 @@ cmake_ninja_workdir = C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuck
 #############################################
 # Order-only phony target for TPs-Rendering
 
-build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_opengl_framework timestamp_1148a94a1bfa61305c7fa1ab20207b42 timestamp_7a634996f42097cba63c4e80a652fad1 timestamp_d1b59e12c5ae9888e0d8111ea50faaa4
+build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_opengl_framework cmake_object_order_depends_target_stb_image timestamp_1148a94a1bfa61305c7fa1ab20207b42 timestamp_7a634996f42097cba63c4e80a652fad1 timestamp_d1b59e12c5ae9888e0d8111ea50faaa4
 
 build CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj: CXX_COMPILER__TPs-Rendering_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\src\main.cpp || cmake_object_order_depends_target_TPs-Rendering
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\src" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:W0
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\src" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:W0
   OBJECT_DIR = CMakeFiles\TPs-Rendering.dir
   OBJECT_FILE_DIR = CMakeFiles\TPs-Rendering.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\TPs-Rendering.dir\
@@ -65,10 +65,10 @@ build CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj: CXX_COMPILER__TPs-Rendering
 #############################################
 # Link the executable TPs-Rendering.exe
 
-build TPs-Rendering.exe: CXX_EXECUTABLE_LINKER__TPs-Rendering_Debug CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj | opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build TPs-Rendering.exe: CXX_EXECUTABLE_LINKER__TPs-Rendering_Debug CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj | opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = opengl-framework\opengl_framework.lib  opengl-framework\glad.lib  opengl-framework\lib\exe_path\exe_path.lib  opengl-framework\lib\glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = opengl-framework\opengl_framework.lib  opengl-framework\glad.lib  opengl-framework\lib\img\img.lib  opengl-framework\lib\img\stb_image.lib  opengl-framework\lib\exe_path\exe_path.lib  opengl-framework\lib\glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\TPs-Rendering.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -134,7 +134,7 @@ build install\local: phony CMakeFiles\install\local.util
 #############################################
 # Custom command for timestamp_1148a94a1bfa61305c7fa1ab20207b42
 
-build timestamp_1148a94a1bfa61305c7fa1ab20207b42 | ${cmake_ninja_workdir}timestamp_1148a94a1bfa61305c7fa1ab20207b42: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\.gitkeep || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build timestamp_1148a94a1bfa61305c7fa1ab20207b42 | ${cmake_ninja_workdir}timestamp_1148a94a1bfa61305c7fa1ab20207b42: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\.gitkeep || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_1148a94a1bfa61305c7fa1ab20207b42 && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E copy "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/.gitkeep" "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/.gitkeep""
   DESC = Copying "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/.gitkeep" to "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/.gitkeep"
   restat = 1
@@ -143,7 +143,7 @@ build timestamp_1148a94a1bfa61305c7fa1ab20207b42 | ${cmake_ninja_workdir}timesta
 #############################################
 # Custom command for timestamp_d1b59e12c5ae9888e0d8111ea50faaa4
 
-build timestamp_d1b59e12c5ae9888e0d8111ea50faaa4 | ${cmake_ninja_workdir}timestamp_d1b59e12c5ae9888e0d8111ea50faaa4: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\fragment.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build timestamp_d1b59e12c5ae9888e0d8111ea50faaa4 | ${cmake_ninja_workdir}timestamp_d1b59e12c5ae9888e0d8111ea50faaa4: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\fragment.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_d1b59e12c5ae9888e0d8111ea50faaa4 && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E copy "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/fragment.glsl" "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/fragment.glsl""
   DESC = Copying "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/fragment.glsl" to "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/fragment.glsl"
   restat = 1
@@ -152,7 +152,7 @@ build timestamp_d1b59e12c5ae9888e0d8111ea50faaa4 | ${cmake_ninja_workdir}timesta
 #############################################
 # Custom command for timestamp_7a634996f42097cba63c4e80a652fad1
 
-build timestamp_7a634996f42097cba63c4e80a652fad1 | ${cmake_ninja_workdir}timestamp_7a634996f42097cba63c4e80a652fad1: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\vertex.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build timestamp_7a634996f42097cba63c4e80a652fad1 | ${cmake_ninja_workdir}timestamp_7a634996f42097cba63c4e80a652fad1: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\vertex.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_7a634996f42097cba63c4e80a652fad1 && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E copy "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/vertex.glsl" "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/vertex.glsl""
   DESC = Copying "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/vertex.glsl" to "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/vertex.glsl"
   restat = 1
@@ -169,11 +169,11 @@ build timestamp_7a634996f42097cba63c4e80a652fad1 | ${cmake_ninja_workdir}timesta
 #############################################
 # Order-only phony target for opengl_framework
 
-build cmake_object_order_depends_target_opengl_framework: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+build cmake_object_order_depends_target_opengl_framework: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_stb_image
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\Camera.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -181,7 +181,15 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj: CXX_C
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\Mesh.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
+  OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
+  TARGET_PDB = opengl-framework\opengl_framework.pdb
+
+build opengl-framework\CMakeFiles\opengl_framework.dir\src\RenderTarget.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\RenderTarget.cpp || cmake_object_order_depends_target_opengl_framework
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -189,7 +197,15 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj: CXX_COM
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\Shader.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
+  OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
+  TARGET_PDB = opengl-framework\opengl_framework.pdb
+
+build opengl-framework\CMakeFiles\opengl_framework.dir\src\Texture.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\Texture.cpp || cmake_object_order_depends_target_opengl_framework
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -197,7 +213,7 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj: CXX_C
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\handle_error.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -205,7 +221,7 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj:
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\make_absolute_path.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -213,7 +229,15 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cp
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\opengl-framework.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
+  OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
+  OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
+  TARGET_PDB = opengl-framework\opengl_framework.pdb
+
+build opengl-framework\CMakeFiles\opengl_framework.dir\src\tinyobjloader.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\src\tinyobjloader.cpp || cmake_object_order_depends_target_opengl_framework
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\tinyobjloader" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glm" -I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glfw\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\glad\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\include" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\exe_path\include" -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -227,7 +251,7 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.
 #############################################
 # Link the static library opengl-framework\opengl_framework.lib
 
-build opengl-framework\opengl_framework.lib: CXX_STATIC_LIBRARY_LINKER__opengl_framework_Debug opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.obj || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib
+build opengl-framework\opengl_framework.lib: CXX_STATIC_LIBRARY_LINKER__opengl_framework_Debug opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\RenderTarget.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Texture.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\tinyobjloader.cpp.obj || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
@@ -453,6 +477,148 @@ build opengl-framework\lib\glm\glm\CMakeFiles\install\local.util: CUSTOM_COMMAND
   restat = 1
 
 build opengl-framework\lib\glm\glm\install\local: phony opengl-framework\lib\glm\glm\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/opengl-framework/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target img
+
+
+#############################################
+# Order-only phony target for img
+
+build cmake_object_order_depends_target_img: phony || cmake_object_order_depends_target_stb_image
+
+build opengl-framework\lib\img\CMakeFiles\img.dir\src\Load.cpp.obj: CXX_COMPILER__img_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\img\src\Load.cpp || cmake_object_order_depends_target_img
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:W0
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\img.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\img.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\img.dir\img.pdb
+  TARGET_PDB = opengl-framework\lib\img\img.pdb
+
+build opengl-framework\lib\img\CMakeFiles\img.dir\src\Save.cpp.obj: CXX_COMPILER__img_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\img\src\Save.cpp || cmake_object_order_depends_target_img
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -external:I"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\opengl-framework\lib\img\lib" -external:W0
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\img.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\img.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\img.dir\img.pdb
+  TARGET_PDB = opengl-framework\lib\img\img.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target img
+
+
+#############################################
+# Link the static library opengl-framework\lib\img\img.lib
+
+build opengl-framework\lib\img\img.lib: CXX_STATIC_LIBRARY_LINKER__img_Debug opengl-framework\lib\img\CMakeFiles\img.dir\src\Load.cpp.obj opengl-framework\lib\img\CMakeFiles\img.dir\src\Save.cpp.obj || opengl-framework\lib\img\stb_image.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\img.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\img.dir\img.pdb
+  TARGET_FILE = opengl-framework\lib\img\img.lib
+  TARGET_PDB = opengl-framework\lib\img\img.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target stb_image
+
+
+#############################################
+# Order-only phony target for stb_image
+
+build cmake_object_order_depends_target_stb_image: phony || opengl-framework\lib\img\CMakeFiles\stb_image.dir
+
+build opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\img\lib\stb_image\stb_image.cpp || cmake_object_order_depends_target_stb_image
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\stb_image.dir\stb_image.pdb
+  TARGET_PDB = opengl-framework\lib\img\stb_image.pdb
+
+build opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image_write.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\img\lib\stb_image\stb_image_write.cpp || cmake_object_order_depends_target_stb_image
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\stb_image.dir\stb_image.pdb
+  TARGET_PDB = opengl-framework\lib\img\stb_image.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target stb_image
+
+
+#############################################
+# Link the static library opengl-framework\lib\img\stb_image.lib
+
+build opengl-framework\lib\img\stb_image.lib: CXX_STATIC_LIBRARY_LINKER__stb_image_Debug opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image.cpp.obj opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image_write.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\stb_image.dir\stb_image.pdb
+  TARGET_FILE = opengl-framework\lib\img\stb_image.lib
+  TARGET_PDB = opengl-framework\lib\img\stb_image.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build opengl-framework\lib\img\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio\opengl-framework\lib\img" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build opengl-framework\lib\img\edit_cache: phony opengl-framework\lib\img\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build opengl-framework\lib\img\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio\opengl-framework\lib\img" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine" -B"C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build opengl-framework\lib\img\rebuild_cache: phony opengl-framework\lib\img\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build opengl-framework\lib\img\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build opengl-framework\lib\img\CMakeFiles\install.util: CUSTOM_COMMAND opengl-framework\lib\img\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio\opengl-framework\lib\img" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build opengl-framework\lib\img\install: phony opengl-framework\lib\img\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build opengl-framework\lib\img\CMakeFiles\install\local.util: CUSTOM_COMMAND opengl-framework\lib\img\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio\opengl-framework\lib\img" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build opengl-framework\lib\img\install\local: phony opengl-framework\lib\img\CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -910,9 +1076,17 @@ build glfw: phony opengl-framework\lib\glfw\src\glfw3.lib
 
 build glfw3.lib: phony opengl-framework\lib\glfw\src\glfw3.lib
 
+build img: phony opengl-framework\lib\img\img.lib
+
+build img.lib: phony opengl-framework\lib\img\img.lib
+
 build opengl_framework: phony opengl-framework\opengl_framework.lib
 
 build opengl_framework.lib: phony opengl-framework\opengl_framework.lib
+
+build stb_image: phony opengl-framework\lib\img\stb_image.lib
+
+build stb_image.lib: phony opengl-framework\lib\img\stb_image.lib
 
 build uninstall: phony opengl-framework\lib\glm\uninstall
 
@@ -933,7 +1107,7 @@ build all: phony TPs-Rendering.exe opengl-framework\all
 #############################################
 # Folder: C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/opengl-framework
 
-build opengl-framework\all: phony opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\glm\all opengl-framework\lib\exe_path\all opengl-framework\lib\glfw\all
+build opengl-framework\all: phony opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\glm\all opengl-framework\lib\img\all opengl-framework\lib\exe_path\all opengl-framework\lib\glfw\all
 
 # =============================================================================
 
@@ -971,6 +1145,13 @@ build opengl-framework\lib\glm\all: phony opengl-framework\lib\glm\glm\all
 build opengl-framework\lib\glm\glm\all: phony
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/opengl-framework/lib/img
+
+build opengl-framework\lib\img\all: phony opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib
+
+# =============================================================================
 # Built-in targets
 
 
@@ -991,14 +1172,14 @@ build C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\cmake-
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\cmake-build-debug-visual-studio\CMakeFiles\cmake.verify_globs | C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindThreads.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\exe_path\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.8\CMakeCCompiler.cmake CMakeFiles\3.27.8\CMakeCXXCompiler.cmake CMakeFiles\3.27.8\CMakeRCCompiler.cmake CMakeFiles\3.27.8\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\cmake-build-debug-visual-studio\CMakeFiles\cmake.verify_globs | C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindThreads.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\exe_path\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\glm\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\img\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.8\CMakeCCompiler.cmake CMakeFiles\3.27.8\CMakeCXXCompiler.cmake CMakeFiles\3.27.8\CMakeRCCompiler.cmake CMakeFiles\3.27.8\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindThreads.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\exe_path\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.8\CMakeCCompiler.cmake CMakeFiles\3.27.8\CMakeCXXCompiler.cmake CMakeFiles\3.27.8\CMakeRCCompiler.cmake CMakeFiles\3.27.8\CMakeSystem.cmake: phony
+build C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\FindThreads.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\exe_path\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\glm\glm\CMakeLists.txt C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\opengl-framework\lib\img\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.8\CMakeCCompiler.cmake CMakeFiles\3.27.8\CMakeCXXCompiler.cmake CMakeFiles\3.27.8\CMakeRCCompiler.cmake CMakeFiles\3.27.8\CMakeSystem.cmake: phony
 
 
 #############################################

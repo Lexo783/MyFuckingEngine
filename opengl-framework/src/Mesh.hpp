@@ -89,12 +89,12 @@ using AnyVertexAttribute = std::variant<
 
 struct VertexBuffer_Descriptor {
     std::vector<AnyVertexAttribute> const& layout; // NOLINT(*avoid-const-or-ref-data-members)
-    std::vector<float> const&       data;   // NOLINT(*avoid-const-or-ref-data-members)
+    std::vector<float> const&              data;   // NOLINT(*avoid-const-or-ref-data-members)
 };
 
 struct Mesh_Descriptor {
     std::vector<VertexBuffer_Descriptor> const& vertex_buffers; // NOLINT(*avoid-const-or-ref-data-members)
-    std::vector<uint32_t> const&         index_buffer{};
+    std::vector<uint32_t> const&                index_buffer{};
 };
 
 class Mesh {

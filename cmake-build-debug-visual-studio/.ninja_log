@@ -1,5 +1,5 @@
 # ninja log v5
-14	131	7364307890391088	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
+6	124	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
 116	1423	7364278714165860	opengl-framework/CMakeFiles/glad.dir/lib/glad/src/gl.c.obj	696a9425eaffa0a0
 4209	4372	7364278743430923	opengl-framework/lib/exe_path/exe_path.lib	6448ee2551963d88
 217	1090	7364278710845853	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	7713e148ece3d3d5
@@ -19,7 +19,7 @@
 1094	1997	7364278719930833	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj	d33934881477e86e
 1141	2016	7364278719965837	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	8841c7141cc47c46
 1161	2034	7364278720035833	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	7cfcaadd6ce05ebb
-6	3970	7364299644589489	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
+310	5890	7364350242921728	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
 1183	2052	7364278720040864	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	1c9884743fae5a1b
 1203	2153	7364278721475861	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	93387e06c56999ea
 1662	2588	7364278725795853	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	a40747457aabe07a
@@ -36,48 +36,9 @@
 38	6105	7364278761000921	opengl-framework/CMakeFiles/opengl_framework.dir/src/Mesh.cpp.obj	fa8c6a0e25c13e1
 76	6625	7364278766170893	opengl-framework/CMakeFiles/opengl_framework.dir/src/opengl-framework.cpp.obj	7f2be2932aec9122
 6816	7203	7364278770725837	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_1148a94a1bfa61305c7fa1ab20207b42	1ee782f4d094bc49
-3971	4723	7364299650684477	TPs-Rendering.exe	563147632be54084
-135	1203	7364307898751068	build.ninja	18765b7461f4b12a
-10	103	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-6	260	7364307903856056	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-6	260	7364307903856056	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-28	293	7364307904121075	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-28	293	7364307904121075	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-294	4620	7364307948396084	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
-4621	5134	7364307952396088	TPs-Rendering.exe	563147632be54084
-7	127	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-10	308	7364350186126412	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-10	308	7364350186126412	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-310	5890	7364350242921728	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	6365cde93b9dd215
 5891	6940	7364350251766379	TPs-Rendering.exe	563147632be54084
-15	234	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-16	629	7364350921646481	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-16	629	7364350921646481	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-10	186	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-9	395	7364351298241418	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-9	395	7364351298241418	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-5	116	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-7	228	7364353415141189	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-7	228	7364353415141189	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-13	213	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-17	519	7364353900406139	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-17	519	7364353900406139	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-9	145	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-10	358	7364354254601200	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-10	358	7364354254601200	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-8	129	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-9	334	7364354420186168	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-9	334	7364354420186168	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-10	122	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-8	286	7364354569161224	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-8	286	7364354569161224	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-7	159	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-9	351	7364354699546228	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-9	351	7364354699546228	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-8	154	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-6	107	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-7	257	7364355319261108	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-7	257	7364355319261108	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-6	124	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
+135	1203	7380694252512381	build.ninja	18765b7461f4b12a
 6	338	7364355613019263	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
 6	338	7364355613019263	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
+9	395	7364351298241418	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
+9	395	7364351298241418	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1

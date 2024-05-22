@@ -32,17 +32,17 @@ struct WindowResizedEvent {
 };
 
 struct EventsCallbacks {
-    std::function<void(MouseMoveEvent)>          on_mouse_moved{[](auto&&) {
+    std::function<void(MouseMoveEvent const&)>          on_mouse_moved{[](auto&&) {
     }};
-    std::function<void(MousePressedEvent)>       on_mouse_pressed{[](auto&&) {
+    std::function<void(MousePressedEvent const&)>       on_mouse_pressed{[](auto&&) {
     }};
-    std::function<void(MouseReleasedEvent)>      on_mouse_released{[](auto&&) {
+    std::function<void(MouseReleasedEvent const&)>      on_mouse_released{[](auto&&) {
     }};
-    std::function<void(ScrollEvent)>             on_scroll{[](auto&&) {
+    std::function<void(ScrollEvent const&)>             on_scroll{[](auto&&) {
     }};
-    std::function<void(FramebufferResizedEvent)> on_framebuffer_resized{[](auto&&) {
+    std::function<void(FramebufferResizedEvent const&)> on_framebuffer_resized{[](auto&&) {
     }};
-    std::function<void(WindowResizedEvent)>      on_window_resized{[](auto&&) {
+    std::function<void(WindowResizedEvent const&)>      on_window_resized{[](auto&&) {
     }};
 };
 

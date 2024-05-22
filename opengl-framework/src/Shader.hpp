@@ -4,6 +4,7 @@
 #include <string_view>
 #include <unordered_map>
 #include <variant>
+#include "Texture.hpp"
 #include "glad/gl.h"
 #include "glm/glm.hpp"
 
@@ -19,8 +20,8 @@ public:
     {
         glDeleteProgram(_id);
     }
-    UniqueShader(UniqueShader const&)                    = delete;
-    auto operator=(UniqueShader const&) -> UniqueShader& = delete;
+    UniqueShader(UniqueShader const&)                    = delete; // You cannot copy
+    auto operator=(UniqueShader const&) -> UniqueShader& = delete; // a Shader. But you can move it, using std::move(my_shader)
     UniqueShader(UniqueShader&& o) noexcept
         : _id{o._id}
     {
@@ -82,16 +83,14 @@ public:
     void set_uniform(std::string_view uniform_name, glm::mat2 const&) const;
     void set_uniform(std::string_view uniform_name, glm::mat3 const&) const;
     void set_uniform(std::string_view uniform_name, glm::mat4 const&) const;
-
-    // void set_uniform(std::string_view uniform_name, Texture const&, TextureSamplerDescriptor const& = {}) const;
-    // void set_uniform_texture(std::string_view uniform_name, GLuint texture_id, TextureSamplerDescriptor const& = {}) const;
+    void set_uniform(std::string_view uniform_name, Texture const&) const;
 
 private:
     auto uniform_location(std::string_view uniform_name) const -> GLint;
 
 private:
-    internal::UniqueShader                         _id;
-    mutable std::unordered_map<std::string, GLint> _uniform_locations;
+    internal::UniqueShader                         _id{};
+    mutable std::unordered_map<std::string, GLint> _uniform_locations{};
 };
 
 } // namespace gl

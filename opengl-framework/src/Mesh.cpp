@@ -28,7 +28,7 @@ Mesh::Mesh(Mesh_Descriptor desc)
 
     if (!desc.index_buffer.empty())
     {
-        assert(desc.index_buffer.size() % 3 == 0 && "TODO");
+        assert(desc.index_buffer.size() % 3 == 0 && "You must provide 3 indices for each triangle");
         _triangles_count = desc.index_buffer.size() / 3;
     }
 
