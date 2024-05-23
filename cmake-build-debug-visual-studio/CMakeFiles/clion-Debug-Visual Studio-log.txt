@@ -1,6 +1,0 @@
-C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -G Ninja -S "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine" -B "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio"
--- GLM: Version 0.9.9.9
--- Including Win32 support
--- Configuring done (1.6s)
--- Generating done (0.4s)
--- Build files have been written to: C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio

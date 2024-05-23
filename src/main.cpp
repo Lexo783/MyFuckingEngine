@@ -1,5 +1,6 @@
 #include "opengl-framework/opengl-framework.hpp" // Inclue la librairie qui va nous servir à faire du rendu
 #include "glm/ext/matrix_clip_space.hpp"
+#include "glm/ext/matrix_transform.hpp"
 
 int main()
 {
@@ -14,17 +15,38 @@ int main()
 
     auto const rectangle_mesh = gl::Mesh{{
         .vertex_buffers = {{
-            .layout = {gl::VertexAttribute::Position2D{0}},
+            .layout = {gl::VertexAttribute::Position3D {0}},
             .data   = {
-                    -0.5f, -0.5f, // Position2D du 1er sommet
-                    +0.5f, -0.5f, // Position2D du 2ème sommet
-                    +0.5f, +0.5f, // Position2D du 3ème sommet
-                    -0.5f, +0.5f  // Position2D du 4ème sommet
+                    -0.5f, -0.5f, -0.5,
+                    +0.5f, -0.5f, -0.5,
+                    -0.5f, +0.5f, -0.5,
+
+                    +0.5f, +0.5f, -0.5,
+                    -0.5f, -0.5f, +0.5,
+                    +0.5f, -0.5f, +0.5,
+
+                    -0.5f, +0.5f, +0.5,
+                    +0.5f, +0.5f, +0.5,
                     },
                     }},
                     .index_buffer   = {
                 0, 1, 2, // Indices du premier triangle : on utilise le 1er, 2ème et 3ème sommet
-                0, 2, 3  // Indices du deuxième triangle : on utilise le 1er, 3ème et 4ème sommet
+                0, 2, 3,  // Indices du deuxième triangle : on utilise le 1er, 3ème et 4ème sommet
+
+                1, 2, 5,
+                5, 6, 2,
+
+                2, 7, 6,
+                3, 2, 7,
+
+                0, 3, 7,
+                0, 4, 7,
+
+                0, 4, 1,
+                4, 5, 1,
+
+                4, 5, 6,
+                6, 7, 4
                 },
                 }};
 
@@ -39,11 +61,14 @@ int main()
         glClearColor(0.f, 0.f, 1.f, 1.f); // Choisis la couleur à utiliser. Les paramètres sont R, G, B, A avec des valeurs qui vont de 0 à 1
         glClear(GL_COLOR_BUFFER_BIT); // Exécute concrètement l'action d'appliquer sur tout l'écran la couleur choisie au-dessus
 
+        glm::mat4 const rotation = glm::rotate(glm::mat4{1.f}, gl::time_in_seconds() /*angle de la rotation*/, glm::vec3{0.f, 0.f, 1.f} /* axe autour duquel on tourne */);
+        glm::mat4 const translation = glm::translate(glm::mat4{1.f}, glm::vec3{0.f, 1.f, 0.f} /* déplacement */);
+
         shader.bind();
 
         // on peut récupérer la matrice de vue avec :
         glm::mat4 const view_matrix = camera.view_matrix();
-        shader.set_uniform("view_projection_matrix", projection_matrix * view_matrix);
+        shader.set_uniform("view_projection_matrix", (projection_matrix * view_matrix) * ( rotation));
         shader.set_uniform("color", glm::vec4{.1, 0.5f, .5f, 1.});
         rectangle_mesh.draw();
     }

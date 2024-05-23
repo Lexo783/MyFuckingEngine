@@ -1,132 +1,54 @@
 # ninja log v5
-8	137	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-114	1275	7380698144451843	opengl-framework/CMakeFiles/glad.dir/lib/glad/src/gl.c.obj	696a9425eaffa0a0
+7	141	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
 3230	3395	7380698165346853	opengl-framework/lib/exe_path/exe_path.lib	6448ee2551963d88
 2966	3592	7380698167516842	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	7713e148ece3d3d5
-77	3877	7380698170411841	opengl-framework/CMakeFiles/opengl_framework.dir/src/make_absolute_path.cpp.obj	276b181656613d65
-1440	1959	7380698151131842	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj	aa08005ba7910234
+114	1275	7380698144451843	opengl-framework/CMakeFiles/glad.dir/lib/glad/src/gl.c.obj	696a9425eaffa0a0
 136	3534	7380698167006840	opengl-framework/lib/img/CMakeFiles/img.dir/src/Save.cpp.obj	dca155f2e4ad6fda
 2859	3462	7380698166316838	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	3036588940cbe089
+77	3877	7380698170411841	opengl-framework/CMakeFiles/opengl_framework.dir/src/make_absolute_path.cpp.obj	276b181656613d65
+1440	1959	7380698151131842	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj	aa08005ba7910234
 1052	1564	7380698147341843	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj	7c05f0c6effaeaf6
-3396	3922	7380698170926834	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	86917ac78dcf69c
 2578	3140	7380698163071848	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	8688d677fd534fe0
-2257	2778	7380698159461838	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	1336092f895e09c3
+3396	3922	7380698170926834	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	86917ac78dcf69c
 1565	2092	7380698152611841	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj	b6d4c6051d1ac174
-4926	5079	7380698182141852	opengl-framework/opengl_framework.lib	6d8062332f6a067b
+2257	2778	7380698159461838	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	1336092f895e09c3
 1276	1439	7380698145846842	opengl-framework/glad.lib	701732b8ff213310
-2778	3383	7380698165531842	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	9c2f1d507b48c7a1
+4926	5079	7380698182141852	opengl-framework/opengl_framework.lib	6d8062332f6a067b
 158	896	7380698140641842	opengl-framework/lib/img/CMakeFiles/stb_image.dir/lib/stb_image/stb_image.cpp.obj	57498e1aa9f454dd
-6816	7203	7364278770725837	timestamp_1148a94a1bfa61305c7fa1ab20207b42	1ee782f4d094bc49
-3463	3954	7380698171241834	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	305c2f534823b81
+2778	3383	7380698165531842	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	9c2f1d507b48c7a1
 2440	2978	7380698161416840	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj	d33934881477e86e
+3463	3954	7380698171241834	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	305c2f534823b81
+6816	7203	7364278770725837	timestamp_1148a94a1bfa61305c7fa1ab20207b42	1ee782f4d094bc49
 2979	3604	7380698167536838	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	8841c7141cc47c46
-2420	2965	7380698161316843	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	7cfcaadd6ce05ebb
 147	738	7380698139066843	opengl-framework/lib/img/CMakeFiles/stb_image.dir/lib/stb_image/stb_image_write.cpp.obj	846c963ad807dee3
-11	5409	7380773645625065	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
+2420	2965	7380698161316843	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	7cfcaadd6ce05ebb
 1945	2419	7380698155876838	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	1c9884743fae5a1b
+9	4134	7380922643421332	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
 3384	3896	7380698170661841	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	93387e06c56999ea
 2092	2577	7380698157456848	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	a40747457aabe07a
 64	1767	7380698149361834	opengl-framework/CMakeFiles/opengl_framework.dir/src/handle_error.cpp.obj	793297a7a12f5067
-27	4846	7380698180106832	opengl-framework/CMakeFiles/opengl_framework.dir/src/Shader.cpp.obj	fdb0d0f27f3fa738
 3141	3763	7380698169336853	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	68a7a6e9a9552ba0
-1768	2256	7380698154256857	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	cc088d8c31b403a7
+27	4846	7380698180106832	opengl-framework/CMakeFiles/opengl_framework.dir/src/Shader.cpp.obj	fdb0d0f27f3fa738
 897	1051	7380698141946842	opengl-framework/lib/img/stb_image.lib	81fb95aa7de542d5
+1768	2256	7380698154256857	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	cc088d8c31b403a7
 1960	2439	7380698156076850	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	3255c638eaf1721c
-16	1944	7380698151106838	opengl-framework/CMakeFiles/opengl_framework.dir/src/Camera.cpp.obj	52a144e3f52e8e85
 3593	4028	7380698171976863	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	dd14ec20999f2596
+16	1944	7380698151106838	opengl-framework/CMakeFiles/opengl_framework.dir/src/Camera.cpp.obj	52a144e3f52e8e85
 3535	3981	7380698171521843	opengl-framework/lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	e9c416ed43c1d1fa
-4028	4179	7380698173206829	opengl-framework/lib/glfw/src/glfw3.lib	8ca49a3ee733a406
 52	4407	7380698175741839	opengl-framework/CMakeFiles/opengl_framework.dir/src/Texture.cpp.obj	aef2f67fded2ed6
+4028	4179	7380698173206829	opengl-framework/lib/glfw/src/glfw3.lib	8ca49a3ee733a406
 740	3228	7380698163871842	opengl-framework/lib/exe_path/CMakeFiles/exe_path.dir/src/exe_path.cpp.obj	1c740a40bc3a4a0d
 5	4559	7380698177251865	opengl-framework/CMakeFiles/opengl_framework.dir/src/Mesh.cpp.obj	5ec7976e667a1566
 102	4926	7380698180911865	opengl-framework/CMakeFiles/opengl_framework.dir/src/opengl-framework.cpp.obj	84af177b09260db4
 6816	7203	7364278770725837	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_1148a94a1bfa61305c7fa1ab20207b42	1ee782f4d094bc49
-5410	6318	7380773653050020	TPs-Rendering.exe	9ecdb14b0600253a
+4135	4895	7380922649401340	TPs-Rendering.exe	9ecdb14b0600253a
 135	1203	7380694252512381	build.ninja	18765b7461f4b12a
 8	273	7380719796052524	timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
-8	273	7380719796052524	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
 90	2858	7380698160221846	opengl-framework/CMakeFiles/opengl_framework.dir/src/tinyobjloader.cpp.obj	da7d1c6d0a24ae1d
-8	220	7380770654730502	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-8	220	7380770654730502	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
+8	273	7380719796052524	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_d1b59e12c5ae9888e0d8111ea50faaa4	8d7f7a977af82c73
+7	214	7380787673177947	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
+7	214	7380787673177947	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
 124	3576	7380698167406842	opengl-framework/lib/img/CMakeFiles/img.dir/src/Load.cpp.obj	f5c15c077ffedfa2
 3576	3709	7380698168536836	opengl-framework/lib/img/img.lib	8c0f11507860ae9d
 39	4736	7380698179026858	opengl-framework/CMakeFiles/opengl_framework.dir/src/RenderTarget.cpp.obj	c08f9dfcfd4de62c
-7	114	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-11	4802	7380773944127702	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4803	5354	7380773948502701	TPs-Rendering.exe	9ecdb14b0600253a
-6	103	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-8	4205	7380774147252912	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4206	4943	7380774153247875	TPs-Rendering.exe	9ecdb14b0600253a
-7	106	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-9	4667	7380774385648048	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4669	5264	7380774390423009	TPs-Rendering.exe	9ecdb14b0600253a
-6	103	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-9	4633	7380774600363187	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4634	5456	7380774607068196	TPs-Rendering.exe	9ecdb14b0600253a
-6	97	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-8	4240	7380774815067796	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4241	4734	7380774818922906	TPs-Rendering.exe	9ecdb14b0600253a
-6	95	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-9	323	7380783349107955	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-9	323	7380783349107955	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-324	4571	7380783392877955	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4572	5318	7380783398857926	TPs-Rendering.exe	9ecdb14b0600253a
-5	90	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-7	231	7380785104111105	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-7	231	7380785104111105	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-232	4232	7380785144931096	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4233	4711	7380785148641105	TPs-Rendering.exe	9ecdb14b0600253a
-6	129	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-8	298	7380785354181339	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-8	298	7380785354181339	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-4	66	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	169	7380786948382921	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-5	169	7380786948382921	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-170	3980	7380786987103015	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-3981	4727	7380786993077832	TPs-Rendering.exe	9ecdb14b0600253a
-5	90	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-7	214	7380787673177947	timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-7	214	7380787673177947	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/timestamp_7a634996f42097cba63c4e80a652fad1	e9da91607bbeada1
-215	3903	7380787710882927	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-3904	4248	7380787713532963	TPs-Rendering.exe	9ecdb14b0600253a
-5	68	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-3	89	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	2667	7380825651907608	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-2668	3238	7380825656402588	TPs-Rendering.exe	9ecdb14b0600253a
-4	65	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	74	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	2652	7380827118027616	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-2653	3023	7380827120932634	TPs-Rendering.exe	9ecdb14b0600253a
-4	83	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-6	2575	7380827745318336	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-2576	3226	7380827750178325	TPs-Rendering.exe	9ecdb14b0600253a
-4	67	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	73	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-4	69	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	2677	7380829869822698	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-2677	3276	7380829874597686	TPs-Rendering.exe	9ecdb14b0600253a
-6	93	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-8	3752	7380830191456653	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-3752	4120	7380830194281656	TPs-Rendering.exe	9ecdb14b0600253a
-4	66	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	2669	7380830536301848	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-2670	3438	7380830542131825	TPs-Rendering.exe	9ecdb14b0600253a
-5	89	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-8	3814	7380830737130557	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-3815	4177	7380830739885560	TPs-Rendering.exe	9ecdb14b0600253a
-7	92	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-8	3838	7380831042190901	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-3839	4461	7380831047310897	TPs-Rendering.exe	9ecdb14b0600253a
-5	91	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-7	4120	7380831391562901	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4121	4581	7380831395232851	TPs-Rendering.exe	9ecdb14b0600253a
-5	71	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	3646	7380832730815809	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-3647	4375	7380832736700813	TPs-Rendering.exe	9ecdb14b0600253a
-8	121	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-10	4957	7380833025636382	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-4958	5503	7380833029866402	TPs-Rendering.exe	9ecdb14b0600253a
-4	69	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-5	75	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
-6	3931	7380833258997386	CMakeFiles/TPs-Rendering.dir/src/main.cpp.obj	de637c9d5bd1cd47
-3932	4668	7380833264892280	TPs-Rendering.exe	9ecdb14b0600253a
+53	586	0	C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/cmake.verify_globs	e9061a249394c6c4
