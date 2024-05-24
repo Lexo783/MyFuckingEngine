@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuck
 #############################################
 # Order-only phony target for TPs-Rendering
 
-build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_opengl_framework cmake_object_order_depends_target_stb_image timestamp_1148a94a1bfa61305c7fa1ab20207b42 timestamp_7a634996f42097cba63c4e80a652fad1 timestamp_d1b59e12c5ae9888e0d8111ea50faaa4
+build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_opengl_framework cmake_object_order_depends_target_stb_image timestamp_1148a94a1bfa61305c7fa1ab20207b42 timestamp_7a634996f42097cba63c4e80a652fad1 timestamp_bd511e306ed1084f82af7b38edbcf968 timestamp_d1b59e12c5ae9888e0d8111ea50faaa4
 
 build CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj: CXX_COMPILER__TPs-Rendering_unscanned_Debug C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\src\main.cpp || cmake_object_order_depends_target_TPs-Rendering
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
@@ -146,6 +146,15 @@ build timestamp_1148a94a1bfa61305c7fa1ab20207b42 | ${cmake_ninja_workdir}timesta
 build timestamp_d1b59e12c5ae9888e0d8111ea50faaa4 | ${cmake_ninja_workdir}timestamp_d1b59e12c5ae9888e0d8111ea50faaa4: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\fragment.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_d1b59e12c5ae9888e0d8111ea50faaa4 && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E copy "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/fragment.glsl" "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/fragment.glsl""
   DESC = Copying "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/fragment.glsl" to "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/fragment.glsl"
+  restat = 1
+
+
+#############################################
+# Custom command for timestamp_bd511e306ed1084f82af7b38edbcf968
+
+build timestamp_bd511e306ed1084f82af7b38edbcf968 | ${cmake_ninja_workdir}timestamp_bd511e306ed1084f82af7b38edbcf968: CUSTOM_COMMAND C$:\Users\flore\OneDrive\Documents\Unreal$ Projects\MyFuckingEngine\res\texture.png || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
+  COMMAND = cmd.exe /C "cd /D "C:\Users\flore\OneDrive\Documents\Unreal Projects\MyFuckingEngine\cmake-build-debug-visual-studio" && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_bd511e306ed1084f82af7b38edbcf968 && C:\Users\flore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E copy "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/texture.png" "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/texture.png""
+  DESC = Copying "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/res/texture.png" to "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/res/texture.png"
   restat = 1
 
 
