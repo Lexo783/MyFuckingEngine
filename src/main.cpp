@@ -1,172 +1,219 @@
-#include "opengl-framework/opengl-framework.hpp" // Inclue la librairie qui va nous servir à faire du rendu
-#include "glm/ext/matrix_clip_space.hpp"
-#include "glm/ext/matrix_transform.hpp"
+#include <iostream>
+#include <glm/ext/matrix_clip_space.hpp>
+#include <glm/ext/matrix_transform.hpp>
+#include <opengl-framework/opengl-framework.hpp>
 
-int main()
-{
-    // Initialisation
-    gl::init("TPs de Rendering"); // On crée une fenêtre et on choisit son nom
-    gl::maximize_window(); // On peut la maximiser si on veut
+struct LightPoint {
 
-    auto camera = gl::Camera{};
-    gl::set_events_callbacks({camera.events_callbacks()});
+    glm::vec3 Position;
+    float Intensity;
 
-    glm::mat4 const projection_matrix = glm::infinitePerspective(1.f /*field of view in radians*/, gl::framebuffer_aspect_ratio() /*aspect ratio*/, 0.001f /*near plane*/);
+    LightPoint() : Position(0, 0, 0), Intensity(100.0f) {
 
-    auto const rectangle_mesh = gl::Mesh{{
-        .vertex_buffers = {{
-            .layout = {gl::VertexAttribute::Position3D{0}, gl::VertexAttribute::UV{1}, gl::VertexAttribute::Normal3D{2}},
-            .data   = {
-                    // Positions            // UVs         // Normales
-                    // Face gauche
-                    -1.0f, -1.0f, -1.0f,    0.0f, 0.0f,   -1.0f,  0.0f,  0.0f,
-                    -1.0f, -1.0f,  1.0f,    1.0f, 0.0f,   -1.0f,  0.0f,  0.0f,
-                    -1.0f,  1.0f,  1.0f,    1.0f, 1.0f,   -1.0f,  0.0f,  0.0f,
-                    -1.0f,  1.0f, -1.0f,    0.0f, 1.0f,   -1.0f,  0.0f,  0.0f,
-                    // Face droite
-                    1.0f, -1.0f, -1.0f,    0.0f, 0.0f,    1.0f,  0.0f,  0.0f,
-                    1.0f, -1.0f,  1.0f,    1.0f, 0.0f,    1.0f,  0.0f,  0.0f,
-                    1.0f,  1.0f,  1.0f,    1.0f, 1.0f,    1.0f,  0.0f,  0.0f,
-                    1.0f,  1.0f, -1.0f,    0.0f, 1.0f,    1.0f,  0.0f,  0.0f,
-                    // Face arrière
-                    -1.0f, -1.0f, -1.0f,    0.0f, 0.0f,    0.0f,  0.0f, -1.0f,
-                    1.0f, -1.0f, -1.0f,    1.0f, 0.0f,    0.0f,  0.0f, -1.0f,
-                    1.0f,  1.0f, -1.0f,    1.0f, 1.0f,    0.0f,  0.0f, -1.0f,
-                    -1.0f,  1.0f, -1.0f,    0.0f, 1.0f,    0.0f,  0.0f, -1.0f,
-                    // Face avant
-                    -1.0f, -1.0f,  1.0f,    0.0f, 0.0f,    0.0f,  0.0f,  1.0f,
-                    1.0f, -1.0f,  1.0f,    1.0f, 0.0f,    0.0f,  0.0f,  1.0f,
-                    1.0f,  1.0f,  1.0f,    1.0f, 1.0f,    0.0f,  0.0f,  1.0f,
-                    -1.0f,  1.0f,  1.0f,    0.0f, 1.0f,    0.0f,  0.0f,  1.0f,
-                    // Face du bas
-                    -1.0f, -1.0f, -1.0f,    0.0f, 0.0f,    0.0f, -1.0f,  0.0f,
-                    1.0f, -1.0f, -1.0f,    1.0f, 0.0f,    0.0f, -1.0f,  0.0f,
-                    1.0f, -1.0f,  1.0f,    1.0f, 1.0f,    0.0f, -1.0f,  0.0f,
-                    -1.0f, -1.0f,  1.0f,    0.0f, 1.0f,    0.0f, -1.0f,  0.0f,
-                    // Face du haut
-                    -1.0f,  1.0f, -1.0f,    0.0f, 0.0f,    0.0f,  1.0f,  0.0f,
-                    1.0f,  1.0f, -1.0f,    1.0f, 0.0f,    0.0f,  1.0f,  0.0f,
-                    1.0f,  1.0f,  1.0f,    1.0f, 1.0f,    0.0f,  1.0f,  0.0f,
-                    -1.0f,  1.0f,  1.0f,    0.0f, 1.0f,    0.0f,  1.0f,  0.0f
-                    },
-                    }},
-                    .index_buffer   = {
-                    // Indices pour chaque face
-                    0, 1, 2,  0, 2, 3,    // Face gauche
-                    4, 5, 6,  4, 6, 7,    // Face droite
-                    8, 9, 10, 8, 10,11,   // Face arrière
-                    12,13,14, 12,14,15,   // Face avant
-                    16,17,18, 16,18,19,   // Face du bas
-                    20,21,22, 20,22,23    // Face du haut
+    }
+};
+
+int main() {
+
+    // Window initialization
+    gl::init("OpenGL OBJ");
+    gl::maximize_window();
+    std::string obj_path = gl::make_absolute_path("res/fourareen.obj").string();
+
+    tinyobj::ObjReader reader;
+
+    if (!reader.ParseFromFile(obj_path)) {
+        if (!reader.Error().empty()) {
+            std::cerr << "lepetitobjtoutmignon: " << reader.Error();
         }
-    }};
+        exit(1);
+    }
 
-    auto const shader = gl::Shader{{
-        .vertex   = gl::ShaderSource::File{"res/vertex.glsl"},
-        .fragment = gl::ShaderSource::File{"res/fragment.glsl"},
+    if (!reader.Warning().empty()) {
+        std::cout << "lepetitobjtoutmignon: " << reader.Warning();
+    }
+
+    auto& attrib = reader.GetAttrib();
+    auto& shapes = reader.GetShapes();
+
+    std::vector<float> data{};
+
+    for (int i = 0; i < shapes.size(); ++i) {
+        int index_offset = 0;
+        for (int y = 0; y < shapes[i].mesh.num_face_vertices.size(); ++y) {
+            int NBRFaceVerticales = shapes[i].mesh.num_face_vertices[y];
+
+            for (int FaceVerIndex = 0; FaceVerIndex < NBRFaceVerticales; ++FaceVerIndex) {
+                tinyobj::index_t meshIndices = shapes[i].mesh.indices[index_offset + FaceVerIndex];
+                data.push_back(attrib.vertices[3*int(meshIndices.vertex_index) + 0]);
+
+                data.push_back(attrib.vertices[3*int(meshIndices.vertex_index) + 2]);
+                data.push_back(attrib.vertices[3*int(meshIndices.vertex_index) + 1]);
+
+                if (meshIndices.normal_index >= 0) {
+                    glm::vec3 normals_normalized = glm::normalize(glm::vec3{
+                            attrib.normals[3*int(meshIndices.normal_index) + 0],
+                            attrib.normals[3*int(meshIndices.normal_index) + 2],
+                            attrib.normals[3*int(meshIndices.normal_index) + 2]
+                    });
+                    data.push_back(normals_normalized.x);
+                    data.push_back(normals_normalized.y);
+                    data.push_back(normals_normalized.z);
+                }
+
+                if (meshIndices.texcoord_index >= 0) {
+                    data.push_back(attrib.texcoords[2*int(meshIndices.texcoord_index) + 0]);
+                    data.push_back(attrib.texcoords[2*int(meshIndices.texcoord_index) + 1]);
+                }
+            }
+            index_offset += NBRFaceVerticales;
+        }
+    }
+
+    auto const boat_mesh = gl::Mesh{
+        {
+            .vertex_buffers = {
+                    {
+                        .layout = {
+                                gl::VertexAttribute::Position3D{0},
+                                gl::VertexAttribute::Normal3D{1},
+                                gl::VertexAttribute::UV{2}},
+                                .data = data
+                    }}
         }};
 
+    // Render target
+    auto render_target = gl::RenderTarget{gl::RenderTarget_Descriptor{
+            .width          = gl::framebuffer_width_in_pixels(),
+            .height         = gl::framebuffer_height_in_pixels(),
+            .color_textures = {
+                    gl::ColorAttachment_Descriptor{
+                            .format  = gl::InternalFormat_Color::RGBA8,
+                            .options = {
+                                    .minification_filter  = gl::Filter::NearestNeighbour,
+                                    .magnification_filter = gl::Filter::NearestNeighbour,
+                                    .wrap_x               = gl::Wrap::ClampToEdge,
+                                    .wrap_y               = gl::Wrap::ClampToEdge,
+                            },
+                    },
+            },
+            .depth_stencil_texture = gl::DepthStencilAttachment_Descriptor{
+                    .format  = gl::InternalFormat_DepthStencil::Depth32F,
+                    .options = {
+                            .minification_filter  = gl::Filter::NearestNeighbour,
+                            .magnification_filter = gl::Filter::NearestNeighbour,
+                            .wrap_x               = gl::Wrap::ClampToEdge,
+                            .wrap_y               = gl::Wrap::ClampToEdge,
+                    },
+            },
+    }};
+
     auto const texture = gl::Texture{
-            gl::TextureSource::File{ // Peut être un fichier, ou directement un tableau de pixels
-                    .path           = "res/texture.png",
-                    .flip_y         = true, // Il n'y a pas de convention universelle sur la direction de l'axe Y. Les fichiers (.png, .jpeg) utilisent souvent une direction différente de celle attendue par OpenGL. Ce booléen flip_y est là pour inverser la texture si jamais elle n'apparaît pas dans le bon sens.
-                    .texture_format = gl::InternalFormat::RGBA8, // Format dans lequel la texture sera stockée. On pourrait par exemple utiliser RGBA16 si on voulait 16 bits par canal de couleur au lieu de 8. (Mais ça ne sert à rien dans notre cas car notre fichier ne contient que 8 bits par canal, donc on ne gagnerait pas de précision). On pourrait aussi stocker en RGB8 si on ne voulait pas de canal alpha. On utilise aussi parfois des textures avec un seul canal (R8) pour des usages spécifiques.
+            gl::TextureSource::File{
+                    .path           = "res/fourareen2K_albedo.jpg",
+                    .flip_y         = true,
+                    .texture_format = gl::InternalFormat::RGBA8,
             },
             gl::TextureOptions{
-                    .minification_filter  = gl::Filter::Linear, // Comment on va moyenner les pixels quand on voit l'image de loin ?
-                    .magnification_filter = gl::Filter::Linear, // Comment on va interpoler entre les pixels quand on zoom dans l'image ?
-                    .wrap_x               = gl::Wrap::Repeat,   // Quelle couleur va-t-on lire si jamais on essaye de lire en dehors de la texture ?
-                    .wrap_y               = gl::Wrap::Repeat,   // Idem, mais sur l'axe Y. En général on met le même wrap mode sur les deux axes.
+                    .minification_filter  = gl::Filter::Linear,
+                    .magnification_filter = gl::Filter::Linear,
+                    .wrap_x               = gl::Wrap::Repeat,
+                    .wrap_y               = gl::Wrap::Repeat,
             }
     };
 
-    while (gl::window_is_open())
-    {
-        glClearColor(0.f, 0.f, 1.f, 1.f); // Choisis la couleur à utiliser. Les paramètres sont R, G, B, A avec des valeurs qui vont de 0 à 1
-        glEnable(GL_DEPTH_TEST);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Vient remplacer glClear(GL_COLOR_BUFFER_BIT);
+    // Camera
+    auto Came = gl::Camera{};
+    gl::set_events_callbacks({
+        Came.events_callbacks()});
 
-        glm::mat4 const rotation = glm::rotate(glm::mat4{1.f}, gl::time_in_seconds() /*angle de la rotation*/, glm::vec3{0.f, 0.f, 1.f} /* axe autour duquel on tourne */);
-        glm::mat4 const translation = glm::translate(glm::mat4{1.f}, glm::vec3{0.f, 1.f, 0.f} /* déplacement */);
-        shader.bind();
 
-        shader.set_uniform("m_texture", texture);
+    auto const screen_mesh = gl::Mesh{{
+        .vertex_buffers = {{
+            .layout = {
+                    gl::VertexAttribute::Position2D{0 },
+                    gl::VertexAttribute::UV{1 }
+                    },
+                    .data   = {
+                    -1.f, 1.f, 0.f, 1.f, // Top left
+                    1.f, 1.f, 1.f, 1.f, // Top right
+                    1.f, -1.f, 1.f, 0.f, // Bottom right
+                    -1.f, -1.f, 0.f, 0.f, // Bottom left
+                    },
+                    }},
+                    .index_buffer = {
+                0, 1, 2,
+                0, 2, 3
+        }
+    }};
 
-        // on peut récupérer la matrice de vue avec :
-        glm::mat4 const view_matrix = camera.view_matrix();
-        shader.set_uniform("view_projection_matrix", (projection_matrix * view_matrix) * ( rotation));
-        shader.set_uniform("color", glm::vec4{.1, 0.5f, .5f, 1.});
-
-        rectangle_mesh.draw();
-    }
-}
-
-/***
- * Algo pour du 2D
- * @return Void main exécute le shader
-
-int main()
-{
-    // Initialisation
-    gl::init("TPs de Rendering"); // On crée une fenêtre et on choisit son nom
-    gl::maximize_window(); // On peut la maximiser si on veut
-
-    auto const shader = gl::Shader{{
-        .vertex   = gl::ShaderSource::File{"res/vertex.glsl"},
+    //Je n'ai rien compris sur la partie GLSL je me suis fait aider mais tranquille !
+    auto const obj_shader = gl::Shader{{
+        .vertex = gl::ShaderSource::File{"res/vertex.glsl"},
         .fragment = gl::ShaderSource::File{"res/fragment.glsl"},
         }};
 
-    auto const background_mesh = gl::Mesh{{
-        .vertex_buffers = {{
-            .layout = {gl::VertexAttribute::Position2D{0}},
-            .data   = {
-                    -1.f,  -1.f, // Position2D du 1er sommet
-                    +1.f,  -1.f, // Position2D du 2ème sommet
-                    +1.f,  +1.f, // Position2D du 3ème sommet
-                    -1.f, +1.f  // Position2D du 4ème sommet
-                    },
-                    }},
-                    .index_buffer   = {
-                0, 1, 2, // Indices du premier triangle : on utilise le 1er, 2ème et 3ème sommet
-                0, 2, 3  // Indices du deuxième triangle : on utilise le 1er, 3ème et 4ème sommet
-                },
-                }};
+    auto const screen_shader = gl::Shader{{
+        .vertex = gl::ShaderSource::File{"res/vertex3D.glsl"},
+        .fragment = gl::ShaderSource::File{"res/fragment3D.glsl"},
+        }};
 
-    auto const rectangle_mesh = gl::Mesh{{
-        .vertex_buffers = {{
-            .layout = {gl::VertexAttribute::Position2D{0}},
-            .data   = {
-                    -0.5f, -0.5f, // Position2D du 1er sommet
-                    +0.5f, -0.5f, // Position2D du 2ème sommet
-                    +0.5f, +0.5f, // Position2D du 3ème sommet
-                    -0.5f, +0.5f  // Position2D du 4ème sommet
-                    },
-                    }},
-                    .index_buffer   = {
-                0, 1, 2, // Indices du premier triangle : on utilise le 1er, 2ème et 3ème sommet
-                0, 2, 3  // Indices du deuxième triangle : on utilise le 1er, 3ème et 4ème sommet
-                },
-                }};
+    // Enable depth buffer
+    glEnable(GL_DEPTH_TEST);
 
-    while (gl::window_is_open())
-    {
-        glClearColor(0.f, 0.f, 1.f, 1.f); // Choisis la couleur à utiliser. Les paramètres sont R, G, B, A avec des valeurs qui vont de 0 à 1
-        //glClear(GL_COLOR_BUFFER_BIT); // Exécute concrètement l'action d'appliquer sur tout l'écran la couleur choisie au-dessus
-        glEnable(GL_BLEND);
-        glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE); // On peut configurer l'équation qui mélange deux couleurs, comme pour faire différents blend mode dans Photoshop. Cette équation-ci donne le blending "normal" entre pixels transparents.
+    LightPoint point_light;
+    point_light.Intensity = 5000.0f;
 
-        shader.bind(); // On a besoin qu'un shader soit bind (i.e. "actif") avant de draw(). On en reparle dans la section d'après.
-        shader.set_uniform("color", glm::vec4{1, 0.2, 0.3, 0.004});
-        shader.set_uniform("fullScreen", true);
-        background_mesh.draw(); // C'est ce qu'on appelle un "draw call" : on envoie l'instruction à la carte graphique de dessiner notre mesh.
+    // Update function
+    while (gl::window_is_open()) {
+        glm::mat4 const view_matrix = Came.view_matrix();
 
-        shader.bind(); // On a besoin qu'un shader soit bind (i.e. "actif") avant de draw(). On en reparle dans la section d'après.
-        shader.set_uniform("moveCube", glm::vec2{cos(gl::time_in_seconds()), sin(gl::time_in_seconds())});
-        shader.set_uniform("aspect_ratio", gl::framebuffer_aspect_ratio());
-        shader.set_uniform("color", glm::vec4{.0, 0.2f, .7f, 1.});
-        shader.set_uniform("fullScreen", false);
+        glm::mat4 const projection_matrix = glm::infinitePerspective(
+                glm::radians(90.f),
+                gl::framebuffer_aspect_ratio(),
+                0.0001f
+        );
+        glm::mat4 const ortho_matrix = glm::ortho(-2.0f, +2.0f, -1.5f, +1.5f, 0.1f, 100.0f);
 
-        rectangle_mesh.draw(); // C'est ce qu'on appelle un "draw call" : on envoie l'instruction à la carte graphique de dessiner notre mesh.
+        glm::mat4 const translation_matrix = glm::translate(
+                glm::mat4{1.f},
+                glm::vec3{-2.f, 0.f, -1.f}
+        );
+
+        glm::mat4 const rotation_matrix = glm::rotate(
+                glm::mat4{1.f},
+                0.f,
+                glm::vec3{0.f, 0.f, 1.f}
+        );
+
+        glm::mat4 const model_matrix = rotation_matrix * translation_matrix;
+
+        glm::mat4 const view_projection_matrix =  projection_matrix * view_matrix * model_matrix;
+
+        render_target.render([&] {
+            point_light.Position = glm::vec3{cos(gl::time_in_seconds()), sin(gl::time_in_seconds()), 0.};
+            point_light.Position *= 100.0f;
+
+            obj_shader.bind();
+            obj_shader.set_uniform("view_projection_matrix", view_projection_matrix);
+            obj_shader.set_uniform("tex", texture);
+            obj_shader.set_uniform("global_light", glm::normalize(glm::vec3{0.5, -1., -1.}));
+            obj_shader.set_uniform("global_light_intensity", 0.5f);
+            obj_shader.set_uniform("point_light", point_light.Position);
+            obj_shader.set_uniform("point_light_intensity", point_light.Intensity);
+            obj_shader.set_uniform("global_illumination", 0.15f);
+
+
+            glClearColor(0.f, 0.f, 1.f, 1.f);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+
+            boat_mesh.draw();
+        });
+
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+
+        screen_shader.bind();
+        screen_shader.set_uniform("tex", render_target.color_texture(0));
+        screen_mesh.draw();
     }
 }
-*/

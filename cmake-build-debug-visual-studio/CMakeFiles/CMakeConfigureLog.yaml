@@ -4,16 +4,16 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Windows - 10.0.19045 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -39,14 +39,14 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.exe
+        C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Detecting C compiler /showIncludes prefix:
@@ -57,9 +57,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -85,14 +85,14 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.exe
+        C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Detecting CXX compiler /showIncludes prefix:
@@ -103,14 +103,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6yjrpe"
-      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6yjrpe"
+      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-b99iyt"
+      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-b99iyt"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -119,24 +119,24 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6yjrpe'
+        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-b99iyt'
         
-        Run Build Command(s): C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_bb965
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_bb965.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_bb965.dir\\ /FS -c C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c
-        [2/2] cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_bb965.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bb965.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_bb965.exe /implib:cmTC_bb965.lib /pdb:cmTC_bb965.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/Users/flore/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_a9700
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a9700.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_a9700.dir\\ /FS -c C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a9700.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a9700.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_a9700.exe /implib:cmTC_a9700.lib /pdb:cmTC_a9700.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-94b0pt"
-      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-94b0pt"
+      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-n97213"
+      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-n97213"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -145,26 +145,26 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-94b0pt'
+        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-n97213'
         
-        Run Build Command(s): C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_49800
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_49800.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_49800.dir\\ /FS -c C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_49800.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_49800.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_49800.exe /implib:cmTC_49800.lib /pdb:cmTC_49800.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/Users/flore/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_9d7c5
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_9d7c5.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_9d7c5.dir\\ /FS -c C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_9d7c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9d7c5.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_9d7c5.exe /implib:cmTC_9d7c5.lib /pdb:cmTC_9d7c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
       - "opengl-framework/lib/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-2lrh9d"
-      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-2lrh9d"
+      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-nbws5a"
+      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-nbws5a"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -174,28 +174,28 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-2lrh9d'
+        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-nbws5a'
         
-        Run Build Command(s): C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_b435b
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b435b.dir\\src.c.obj /FdCMakeFiles\\cmTC_b435b.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-2lrh9d\\src.c"
-        FAILED: CMakeFiles/cmTC_b435b.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b435b.dir\\src.c.obj /FdCMakeFiles\\cmTC_b435b.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-2lrh9d\\src.c"
-        C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-2lrh9d\\src.c(1): fatal error C1083: Impossible d'ouvrir le fichier include : 'pthread.h' : No such file or directory
+        Run Build Command(s): C:/Users/flore/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_a31d6
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a31d6.dir\\src.c.obj /FdCMakeFiles\\cmTC_a31d6.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-nbws5a\\src.c"
+        FAILED: CMakeFiles/cmTC_a31d6.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a31d6.dir\\src.c.obj /FdCMakeFiles\\cmTC_a31d6.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-nbws5a\\src.c"
+        C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-nbws5a\\src.c(1): fatal error C1083: Impossible d'ouvrir le fichier include : 'pthread.h' : No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:175 (_threads_check_lib)"
       - "opengl-framework/lib/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1822al"
-      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1822al"
+      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-24m13p"
+      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-24m13p"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -205,30 +205,30 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-1822al'
+        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-24m13p'
         
-        Run Build Command(s): C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_4f0ce
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4f0ce.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_4f0ce.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-1822al\\CheckFunctionExists.c"
-        [2/2] cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_4f0ce.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4f0ce.dir\\CheckFunctionExists.c.obj  /out:cmTC_4f0ce.exe /implib:cmTC_4f0ce.lib /pdb:cmTC_4f0ce.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_4f0ce.exe 
-        cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_4f0ce.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4f0ce.dir\\CheckFunctionExists.c.obj  /out:cmTC_4f0ce.exe /implib:cmTC_4f0ce.lib /pdb:cmTC_4f0ce.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4f0ce.dir\\CheckFunctionExists.c.obj /out:cmTC_4f0ce.exe /implib:cmTC_4f0ce.lib /pdb:cmTC_4f0ce.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_4f0ce.dir/intermediate.manifest CMakeFiles\\cmTC_4f0ce.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthreads.lib'
+        Run Build Command(s): C:/Users/flore/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_6f8da
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6f8da.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_6f8da.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-24m13p\\CheckFunctionExists.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_6f8da.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6f8da.dir\\CheckFunctionExists.c.obj  /out:cmTC_6f8da.exe /implib:cmTC_6f8da.lib /pdb:cmTC_6f8da.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_6f8da.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_6f8da.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6f8da.dir\\CheckFunctionExists.c.obj  /out:cmTC_6f8da.exe /implib:cmTC_6f8da.lib /pdb:cmTC_6f8da.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6f8da.dir\\CheckFunctionExists.c.obj /out:cmTC_6f8da.exe /implib:cmTC_6f8da.lib /pdb:cmTC_6f8da.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6f8da.dir/intermediate.manifest CMakeFiles\\cmTC_6f8da.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthreads.lib'\x0d
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/flore/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:176 (_threads_check_lib)"
       - "opengl-framework/lib/glfw/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-av8aig"
-      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-av8aig"
+      source: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-sfasgh"
+      binary: "C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-sfasgh"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -238,15 +238,15 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-av8aig'
+        Change Dir: 'C:/Users/flore/OneDrive/Documents/Unreal Projects/MyFuckingEngine/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-sfasgh'
         
-        Run Build Command(s): C:/Users/flore/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_e6907
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e6907.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_e6907.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-av8aig\\CheckFunctionExists.c"
-        [2/2] cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e6907.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e6907.dir\\CheckFunctionExists.c.obj  /out:cmTC_e6907.exe /implib:cmTC_e6907.lib /pdb:cmTC_e6907.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_e6907.exe 
-        cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e6907.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e6907.dir\\CheckFunctionExists.c.obj  /out:cmTC_e6907.exe /implib:cmTC_e6907.lib /pdb:cmTC_e6907.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e6907.dir\\CheckFunctionExists.c.obj /out:cmTC_e6907.exe /implib:cmTC_e6907.lib /pdb:cmTC_e6907.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e6907.dir/intermediate.manifest CMakeFiles\\cmTC_e6907.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthread.lib'
+        Run Build Command(s): C:/Users/flore/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_a5ae4
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a5ae4.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_a5ae4.dir\\ /FS -c "C:\\Users\\flore\\OneDrive\\Documents\\Unreal Projects\\MyFuckingEngine\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-sfasgh\\CheckFunctionExists.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a5ae4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a5ae4.dir\\CheckFunctionExists.c.obj  /out:cmTC_a5ae4.exe /implib:cmTC_a5ae4.lib /pdb:cmTC_a5ae4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_a5ae4.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\flore\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a5ae4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a5ae4.dir\\CheckFunctionExists.c.obj  /out:cmTC_a5ae4.exe /implib:cmTC_a5ae4.lib /pdb:cmTC_a5ae4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a5ae4.dir\\CheckFunctionExists.c.obj /out:cmTC_a5ae4.exe /implib:cmTC_a5ae4.lib /pdb:cmTC_a5ae4.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a5ae4.dir/intermediate.manifest CMakeFiles\\cmTC_a5ae4.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthread.lib'\x0d
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
